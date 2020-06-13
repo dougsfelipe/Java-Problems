@@ -1,0 +1,32 @@
+import java.util.Scanner;
+
+public class Inverso {
+
+	public static void main(String[] args) {
+		Scanner in = new Scanner(System.in);
+		
+		int n = in.nextInt();
+		
+		int[] array1 = new int[n];
+		int[] inverso = new int[n];
+		
+		for (int i = 0; i < inverso.length; i++) {
+			array1[i]=in.nextInt();
+		}
+		
+		for (int i = 0; i < array1.length; i++) {
+			n--;
+			inverso[n]=2*array1[i];
+		}
+		
+		for (int i = 0; i < inverso.length; i++) {
+			
+			
+			
+				System.out.println(inverso[i]);
+			
+		}
+
+	}
+
+}
